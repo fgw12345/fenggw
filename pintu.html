@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>冯冠武2021150902021</title>
+    <!-- jQuery -->
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"/>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css"
+          href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <link rel="icon" href="https://aurora-cdn.wuhobin.top/blog/favicon.png">
+    <link rel="apple-touch-icon" href="https://aurora-cdn.wuhobin.top/blog/favicon.png">
+    <!-- Izitoast -->
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+    <script type="text/javascript"
+            src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
+    </script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Aplayer -->
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.js" crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVH35V11W"></script>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>拼图1.0</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jqsession.js"></script>
+    <link rel="stylesheet" href="css/pintu.css">
+</head>
+<body>
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <div class="loading-word">
+                <p class="loading-title" id="loading-title">冯冠武2021150902021</p>
+                <span id="loading-text">加载中</span>
+            </div>
+        </div>
+    </div>
+    <section id="section" class="section">
+        <div class="bg-all">
+            <img id="bg" onerror="this.classList.add('error');">
+            <div class="cover"></div>
+        </div>
+        <!-- 鼠标指针 -->
+        <div id="g-pointer-1"></div>
+        <div id="g-pointer-2"></div>
+        <div class="main">
+            <div class="main-img" style="width: 400px; margin: 0px auto;">
+                    <img id="logo-img" src="photo.jpg">
+                    <div class="img-title">
+                        <span class="img-title-big" id="logo-text-1" style="font-size: 2rem;"> 点这里可以看成绩</span>
+                    </div>
+            </div>
+            <div class="container"></div>
+            <div id="timecount">
+                <span id="span1">00</span> :
+                <span id="span2">00</span> :
+                <span id="span3">00</span> :
+                <span id="span4">00</span>
+            </div>
+            <div>
+                <button id="startGame" class="dbutton">开始游戏</button>
+                <button id="restartGame" class="dbutton">重置游戏</button>  
+            </div>
+            <div class="getimg" style="background-color:#F5F5F5; width: 200px;height: 120px;margin: 70px auto;">
+                <p class="text">图片拖拽至此区域</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/pintu.js"></script>
+<noscript>
+    <div class="noscript fixed-top">请开启 JavaScript</div>
+</noscript>
+<!-- JS -->
+<script type="text/javascript" src="./js/main5.js"></script>
+<script type="text/javascript" src="./js/set.js"></script>
+<script type="text/javascript" src="./js/time.js"></script>
+<script type="text/javascript" src="./js/js.cookie.js"></script>
+<script type="text/javascript"
+        src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js">
+</script>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
+    }
+</script>
+<script src='js/snow.js'></script>
+<script>
+        snow.start({
+            maxRadius: 4,
+            flakeCount: 120,
+            stickingRatio: 2,
+            wind: -2
+        });
+</script>
+<script type="text/javascript">
+    const myElement = document.getElementById('logo-text-1'); 
+    myElement.addEventListener('click', () => {
+    myElement.textContent = localStorage.getItem("tim");})
+</script>;
+
+    
+</html>

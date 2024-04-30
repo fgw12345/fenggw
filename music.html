@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ViolentAyangMusic</title>
+    <!--    引入外部css文件-->
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/music.css">
+    <title>冯冠武2021150902021</title>
+    <!-- jQuery -->
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"/>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css"
+        href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <link rel="icon" href="https://aurora-cdn.wuhobin.top/blog/favicon.png">
+    <link rel="apple-touch-icon" href="https://aurora-cdn.wuhobin.top/blog/favicon.png">
+    <!-- Izitoast -->
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+    <script type="text/javascript"
+        src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
+    </script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Aplayer -->
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVH35V11W"></script>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">>
+</head>
+<body>
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <div class="loading-word">
+                <p class="loading-title" id="loading-title">冯冠武2021150902021</p>
+                <span id="loading-text">加载中</span>
+            </div>
+        </div>
+    </div>
+    <!--横幅-->
+    <section id="section" class="section">
+        <div class="bg-all">
+            <img id="bg" onerror="this.classList.add('error');">
+            <div class="cover"></div>
+        </div>
+        <!-- 鼠标指针 -->
+        <div id="g-pointer-1"></div>
+        <div id="g-pointer-2"></div>
+        <div class="banner">
+            <ul>
+                <li class="m1" datasrc="mp3/1.mp3" title="Mood - 24KGoldn">
+                    <img src="img1/1.jpg" alt=""width="65">
+                </li>
+                <li class="m2" datasrc="mp3/2.mp3" title="爱人错过 - 告五人">
+                    <img src="img1/2.jpg" alt=""width="90">
+                </li>
+                <li class="m3" datasrc="mp3/3.mp3" title="Something Just like">
+                    <img src="img1/3.jpg" alt=""width="119">
+                </li>
+                <li class="m4" datasrc="mp3/4.mp3" title="李白 - 李荣浩">
+                    <img src="img1/4.jpg" alt=""width="90">
+                </li>
+                <li class="m5" datasrc="mp3/5.mp3" title="Baby - JustinBieber">
+                    <img src="img1/5.jpg" alt=""width="65">
+                </li>
+            </ul>
+        </div>
+        <!--横幅-->
+
+        <!--音乐播放器-->
+        <div class="music">
+            <div class="m_img">
+                <img src="img1/1.jpg"width="90" alt="">
+            </div>
+            <div class="m_text">Mood - 24KGoldn</div>
+            <div class="m_btn">
+                <a href="#" class="m_prev" title="上一首"></a>
+                <a href="#" class="m_play" title="播放"></a>
+                <a href="#" class="m_next" title="下一首"></a>
+            </div>
+            <div class="m_close"></div>
+            <audio src="mp3/1.mp3"class="m_mp3"></audio>
+        </div>
+    </section>
+    <!--音乐播放器-->
+    
+    <!-- 引入jQuery核心文件-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--    引入外部js文件-->
+    <script type="text/javascript" src="js/music.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
+    <noscript>
+        <div class="noscript fixed-top">请开启 JavaScript</div>
+    </noscript>
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main3.js"></script>
+    <script type="text/javascript" src="./js/set.js"></script>
+    <script type="text/javascript" src="./js/time.js"></script>
+    <script type="text/javascript" src="./js/js.cookie.js"></script>
+    <script type="text/javascript"
+        src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js">
+    </script>
+    <script src="js/cool.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src='js/snow.js'></script>
+    <script>
+        snow.start({
+            maxRadius: 4,
+            flakeCount: 120,
+            stickingRatio: 2,
+            wind: -2
+        });
+    </script>
+</body>
+</html>
